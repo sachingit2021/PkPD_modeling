@@ -37,3 +37,12 @@ where:
 Drug concentrations are computed as:
     C1 = A1 / V1
     C2 = A2 / V2
+
+    
+--------------------------------------------------------------------
+Requirement
+--------------------------------------------------------------------
+
+pip install -r requirements.txt
+
+
