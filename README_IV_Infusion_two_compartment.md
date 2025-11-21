@@ -28,8 +28,8 @@ The governing equations are:
     dA1/dt = R -(k10 + k12)*A1 + k21*A2
     dA2/dt =  k12*A1 - k21*A2
 
-where:
-    R: Constant rate of infusion
+where:\\
+    R: Constant rate of infusion\\
     k10 : elimination rate constant (1/hr)
     k12 : rate constant for transfer from central to peripheral (1/hr)
     k21 : rate constant for transfer from peripheral to central (1/hr)
