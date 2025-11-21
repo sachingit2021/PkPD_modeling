@@ -26,11 +26,11 @@ Let:
 
 The governing equations are:
 
-    dA1/dt = -(k01 + k12)*A1 + k21*A2
+    dA1/dt = -(k10 + k12)*A1 + k21*A2
     dA2/dt =  k12*A1 - k21*A2
 
 where:
-    k01 : elimination rate constant (1/hr)
+    k10 : elimination rate constant (1/hr)
     k12 : rate constant for transfer from central to peripheral (1/hr)
     k21 : rate constant for transfer from peripheral to central (1/hr)
 
