@@ -1,11 +1,10 @@
 ====================================================================
-        TWO-COMPARTMENT IV BOLUS PHARMACOKINETIC MODEL
+        TWO-COMPARTMENT IV INFUSION PHARMACOKINETIC MODEL
 ====================================================================
 --------------------------------------------------------------------
 PROJECT OVERVIEW
 --------------------------------------------------------------------
-This project simulates and analyzes a **two-compartment pharmacokinetic (PK)** model 
-for an intravenous (IV) bolus dose. It demonstrates how to:
+This project implements the two compartment IV-Infusion model. Here we infuse the drug intravenously at a constant rate (say R). Here, I have performed the simulation studies of drug elimination with a rate constant k10 and redistribution between central and peripheral compartments respectively with rates k12 and k21. Noise is added to mimic the experimental data of time variation of concetration of the drug and parameter estimation has been performed.
 
 1. Build and solve a system of ordinary differential equations (ODEs)
    representing drug distribution between central and peripheral compartments.
@@ -26,10 +25,11 @@ Let:
 
 The governing equations are:
 
-    dA1/dt = -(k10 + k12)*A1 + k21*A2
+    dA1/dt = R -(k10 + k12)*A1 + k21*A2
     dA2/dt =  k12*A1 - k21*A2
 
 where:
+    R: Constant rate of infusion
     k10 : elimination rate constant (1/hr)
     k12 : rate constant for transfer from central to peripheral (1/hr)
     k21 : rate constant for transfer from peripheral to central (1/hr)
